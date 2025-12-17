@@ -22,8 +22,13 @@ def get_all_items():
 @app.post("/items")
 def add_item(item):
     file = load()
-    file["item"].append(item)
-    file = str(file)
+    file.append(item)
     with open(f"{DB_PATH}","w") as f :
-        f.write(file)
+        json.dump(file, f, indent=2)
 
+add_item({
+"id": 33,
+"name": "Milk",
+"quantity": 2
+}
+)
