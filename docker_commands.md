@@ -41,6 +41,6 @@ docker build -t shopping-server2:v1 .
 ### Run the container
 
 ```bash
-docker run -d --name my_app2 -p 8000:8000 --mount source=fastapi-db,target=/db shopping-server2:v1  
+docker run -d --name my_app2 -p 8080:8080 --mount source=fastapi-db,target=/db shopping-server2:v1  
 ```
 
