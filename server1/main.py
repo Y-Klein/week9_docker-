@@ -25,4 +25,5 @@ def add_item(item):
     file.append(item)
     with open(f"{DB_PATH}","w") as f :
         json.dump(file, f, indent=2)
+    return "Saved successfully"
 
