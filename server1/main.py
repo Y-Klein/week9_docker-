@@ -26,9 +26,3 @@ def add_item(item):
     with open(f"{DB_PATH}","w") as f :
         json.dump(file, f, indent=2)
 
-add_item({
-"id": 33,
-"name": "Milk",
-"quantity": 2
-}
-)
