@@ -27,4 +27,3 @@ def add_item(item):
     with open(f"{DB_PATH}","w") as f :
         f.write(file)
 
-add_item({ "id": 2,"name": "Milk","quantity": 8})
